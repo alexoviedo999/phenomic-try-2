@@ -12,7 +12,7 @@ export default class Footer extends React.Component {
           href="/"
           className="no-underline white"
         >
-          ScaleConf Colombia | Colombia 2017 {String.fromCharCode(169)}
+          Advanced Eye Center 2017 {String.fromCharCode(169)}
         </a>
       </footer>
     )
