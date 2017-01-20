@@ -1,51 +1,37 @@
-import React, { PropTypes } from "react"
-import { Link } from "phenomic"
-import Svg from "react-svg-inline"
+import React, { Component } from 'react'
+import Nav from "../Nav"
 
-import twitterSvg from "../icons/iconmonstr-twitter-1.svg"
-import gitHubSvg from "../icons/iconmonstr-github-1.svg"
-
-import styles from "./index.css"
-
-const Header = (props, { metadata: { pkg } }) => (
-  <header className={ styles.header }>
-    <nav className={ styles.nav }>
-      <div className={ styles.navPart1 }>
-        <Link
-          className={ styles.link }
-          to={ "/" }
-        >
-          { "Home" }
-        </Link>
-      </div>
-      <div className={ styles.navPart2 }>
-        {
-          pkg.twitter &&
-          <a
-            href={ `https://twitter.com/${pkg.twitter}` }
-            className={ styles.link }
-          >
-            <Svg svg={ twitterSvg } cleanup />
-            { "Twitter" }
-          </a>
-        }
-        {
-          pkg.repository &&
-          <a
-            href={ pkg.repository }
-            className={ styles.link }
-          >
-            <Svg svg={ gitHubSvg } cleanup />
-            { "GitHub" }
-          </a>
-        }
-      </div>
-    </nav>
-  </header>
-)
-
-Header.contextTypes = {
-  metadata: PropTypes.object.isRequired,
+let particles
+if (typeof window !== 'undefined') {
+  particles = require('particles.js')
 }
 
-export default Header
+export default class Hero extends Component {
+
+  componentDidMount() {
+    particles && particles.particlesJS.load('particles-js', '/assets/particles.json', function() {
+      // eslint-disable-next-line no-console
+      console.log('callback - particles.js config loaded');
+    })
+  }
+
+  render() {
+    return (
+      <div id="particles-js" className="w-100 gradient h-650">
+        <Nav />
+        <div className="mw80 w-100 center relative">
+          <header className="w-100 tc tl-l w-auto-l">
+            <h1 className="home__title home__title--scaleconf">ScaleConf</h1>
+            <h1 className="home__title home__title--colombia">Colombia </h1>
+            <p className="home__date">
+              Medellín, March 25 2017
+            </p>
+            <a className="btn btn--home" href="https://ti.to/colombia-dev/scaleconfco">
+              Buy your tickets now
+            </a>
+          </header>
+        </div>
+      </div>
+    )
+  }
+}

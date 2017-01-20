@@ -1,22 +1,20 @@
-import React from "react"
+import React from 'react';
 
-import styles from "./index.css"
+export default class Footer extends React.Component {
+  constructor(props) {
+    super(props);
+  }
 
-const Footer = () => (
-  <footer className={ styles.footer }>
-    { /* If you like Phenomic, this is a way to share the love ;) */ }
-    <p>
-      <a
-        href={ process.env.PHENOMIC_HOMEPAGE }
-        className={ styles.phenomicReference }
-      >
-        { "Website generated with " }
-        <span className={ styles.phenomicReferenceName }>
-          {  `<${ process.env.PHENOMIC_NAME} />` }
-        </span>
-      </a>
-    </p>
-  </footer>
-)
-
-export default Footer
+  render() {
+    return (
+      <footer className="tc pv3 gradient">
+        <a
+          href="/"
+          className="no-underline white"
+        >
+          ScaleConf Colombia | Colombia 2017 {String.fromCharCode(169)}
+        </a>
+      </footer>
+    )
+  }
+}
