@@ -1,10 +1,10 @@
 import React, { Component } from 'react'
 import Nav from "../Nav"
 
-let particles
-if (typeof window !== 'undefined') {
-  particles = require('particles.js')
-}
+// let particles
+// if (typeof window !== 'undefined') {
+//   particles = require('particles.js')
+// }
 
 export default class Hero extends Component {
 
