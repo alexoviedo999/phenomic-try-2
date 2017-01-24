@@ -20,19 +20,19 @@ if (isClient) {
   });
 }
 
-const access_token = 'pk.eyJ1IjoibW9udG9nZWVrIiwiYSI6ImNpdzZvYnVqODAzeHYyb3Bkc3dudXZoZ3oifQ.3i9hrMrgo2E_NJt00-W9Cg';
+const access_token = 'pk.eyJ1IjoiYWxleG92aWVkbzk5OSIsImEiOiJjaXlicjI3NXUwMDBnMnFzY2psNGZzMTluIn0.E6mDIr_E32ZWpy_MIYujdw';
 // const tiles = 'https://{s}.tiles.mapbox.com/v4/mapbox.streets/{z}/{x}/{y}.png?access_token=';
 const tiles = 'https://api.mapbox.com/styles/v1/mapbox/streets-v10/tiles/256/{z}/{x}/{y}?access_token=';
 
-const coordinates = [6.264524, -75.566549];
-const zoom = 16;
+const coordinates = [25.865927, -80.3197427];
+const zoom = 15;
 
 export default function RutaNMap() {
   return (
     <div>
       {
         isClient &&
-        <Map center={coordinates} zoom={zoom} className="vh-50" zoomControl={false}>
+        <Map center={coordinates} zoom={zoom} className="vh-50" zoomControl={true}>
           <TileLayer
             url={`${tiles}${access_token}`}
           />

@@ -16,7 +16,7 @@ class Contact extends Component {
           <Suscription />
         </div>
         <a href="mailto: hola@scaleconfco.com" className="title--mail">
-          hola@scaleconfco.com
+          rodrigo@drbelalcazar.com
         </a>
         <SocialIcons />
       </div>

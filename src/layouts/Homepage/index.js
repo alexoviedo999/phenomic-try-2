@@ -28,9 +28,12 @@ const Homepage = (props) => {
       <div className="section mw80 center" id="scholarships">
         <Scholarships />
       </div>
-      <div className="section bg-coc" id="codeofconduct">
-        <CodeOfConduct />
-      </div>
+      {/*
+        <div className="section bg-coc" id="codeofconduct">
+          <CodeOfConduct />
+        </div>
+        */}
+
       <div className="section gradient">
         <Organizers />
       </div>

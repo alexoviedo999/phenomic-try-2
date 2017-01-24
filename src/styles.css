@@ -40,31 +40,15 @@
 /* -----------------
 */
 .gradient {
-  /*background-image: linear-gradient(to right, var(--blue-gradient) 0%, transparent 150%);*/
-  /*filter: blur(5px);*/
-  /*background: url('./assets/images/eye.jpg') center no-repeat;*/
-  /*z-index: 0;*/
-
   background:
-
-    linear-gradient(
-  rgba(8, 145, 253, 1.45),
-  rgba(8, 145, 253, 0.25)
-),
+    radial-gradient(
+      rgba(212, 115, 89, 0.60),
+      rgba(8, 145, 253, 1.7)
+    ),
     /* bottom, image */
     url('./assets/images/eye.jpg') center no-repeat;
     background-size: cover;
 }
-
-/*.eye-image {
-  background: url('./assets/images/eye.jpg') center no-repeat;
-  background-size: cover;
-}*/
-
-/*body {
-  background: url('./assets/images/eye.jpg') center no-repeat;
-  background-size: cover;
-}*/
 
 .bg-speakers, .bg-coc, .bg-venue {
   background-color: var(--medium-dark-blue);
@@ -227,14 +211,29 @@ header{
 .scholarship__content{
   line-height: 1.65;
 }
-.title_container{
+.title_container-reviews{
   align-self: flex-start;
 }
-.scholarships__image{
-  width: 45%;
-  margin: 0 -4rem -2rem 0;
+
+.title_container-reviews ul {
+  padding-left: 0px;
+}
+
+.title_container-reviews li {
+  margin-top: 75px;
+  list-style: none;
+  display: inline-block;
+}
+
+/*p.section__content.scholarship__content {
+    width: 80%;
+    display: inline-block;
+}*/
+
+.review__images{
+  margin: 0 -4rem -2rem 4rem;
   align-self: flex-end;
-  max-width: 80%;
+  /*max-width: 80%;*/
 }
 
 /* Code of Conduct*/
@@ -308,6 +307,10 @@ header{
   text-transform: uppercase;
   text-decoration: none;
   color: var(--white);
+}
+
+.top-nav {
+  background-color: rgba(255, 255, 255, 0.3);
 }
 /**
  * Fonts sizes

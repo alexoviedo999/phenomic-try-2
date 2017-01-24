@@ -13,7 +13,7 @@ export default class Suscription extends Component {
             className="f5 bg-white br0 ba b--blue eau-book pa2 h-2 w-70 input--email"
             type="email"
             name="EMAIL"
-            placeholder="YOU@EMAIL.COM"
+            placeholder="YOUR@EMAIL.COM"
           />
           <input className="f6 eau-book bg-blue white br0 bn pa2 h-2 w-30 input--button" type="submit" value="SUBSCRIBE" />
         </form>

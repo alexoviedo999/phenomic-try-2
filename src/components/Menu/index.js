@@ -11,22 +11,21 @@ export default class Menu extends React.Component {
       <nav className="bg-blue1 fixed absolute--fill">
         <a onClick={this.props.onClick} className="white f1 tr db pr3 pt2">&#x2715;</a>
         {/* <div className="">ScaleConf</div> */}
-  
+
           <li className="pv3">
-            <a href="" className="no-underline white ttu f4">Speakers</a>
+            <a href="" className="no-underline white ttu f4">About</a>
           </li>
           <li className="pv3">
-            <a href="" className="no-underline white ttu f4">Venue</a>
+            <a href="" className="no-underline white ttu f4">Location</a>
           </li>
           <li className="pv3">
-            <a href="" className="no-underline white ttu f4">Scholarships</a>
+            <a href="" className="no-underline white ttu f4">Eye Conditions</a>
           </li>
           <li className="pv3">
-            <a href="" className="no-underline white ttu f4">Code of conduct</a>
+            <a href="" className="no-underline white ttu f4">Treatments</a>
           </li>
           <li className="pv3">
-            <Link to="#sponsors" className="no-underline white ttu f4">Sponsors</Link>
-            {/* <a href="" className="no-underline white ttu f4">Sponsors</a> */}
+            <a href="" className="no-underline white ttu f4">Reviews</a>
           </li>
         </ul>
       </nav>
