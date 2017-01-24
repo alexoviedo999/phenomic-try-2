@@ -6,7 +6,7 @@ import About from "../../fragments/About"
 import Speakers from "../../fragments/Speakers"
 import Venue from "../../fragments/Venue"
 import Scholarships from "../../fragments/Scholarships"
-import CodeOfConduct from "../../fragments/CodeOfConduct"
+{/* import CodeOfConduct from "../../fragments/CodeOfConduct" */}
 import Sponsors from "../../fragments/Sponsors"
 import Organizers from "../../fragments/Organizers"
 
