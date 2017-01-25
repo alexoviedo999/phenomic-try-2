@@ -122,8 +122,8 @@ header{
   font-size: 2rem;
   margin-bottom: 2rem;
   margin-top: 2rem;
-  max-width: 20rem;
-  text-align: left;
+  /*max-width: 20rem;
+  text-align: left;*/
   color: var(--white);
 }
 .section__title--contact{
@@ -231,7 +231,7 @@ header{
 }*/
 
 .review__images{
-  margin: 0 -4rem -2rem 4rem;
+  margin: 0 -4rem -2rem 0rem;
   align-self: flex-end;
   /*max-width: 80%;*/
 }
@@ -309,9 +309,10 @@ header{
   color: var(--white);
 }
 
-.top-nav {
+.top-nav .db-l:not(.dn){
   background-color: rgba(255, 255, 255, 0.3);
 }
+
 /**
  * Fonts sizes
  */
@@ -382,15 +383,47 @@ header{
  * Media queries
  */
 @media screen and (min-width: 60em) {
+  .home__title--scaleconf{
+    font-size: 4.0rem;
+  }
+  .home__title--colombia{
+    font-size: 2.5rem;
+    font-weight: 500;
+  }
   .f-1-l {
     font-size: 3.75rem;
   }
   .bl--solid-l {
     border-left-style: solid;
   }
+  .review__images{
+    margin: 0 -4rem -2rem 4rem;
+  }
+  .top-nav {
+    background-color: rgba(255, 255, 255, 0.3);
+  }
 }
 
-@media(max-width:900px){
+@media(max-width:1130px){
+  .home__title--scaleconf{
+    font-size: 4.0rem;
+  }
+  .home__title--colombia{
+    font-size: 2.5rem;
+    font-weight: 500;
+  }
+}
+
+@media (max-width:900px){
+  .home__title--scaleconf{
+    font-size: 4.625rem;
+  }
+
+  .home__title--colombia{
+    font-size: 2.5rem;
+    font-weight: 500;
+  }
+
   .copy--speakers{
     width: 100%;
   }
