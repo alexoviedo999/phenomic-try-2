@@ -64,6 +64,7 @@
 header{
   padding: 4rem;
   position: absolute;
+  bottom: -650px;
 }
 
 .home__title{
@@ -73,14 +74,14 @@ header{
 }
 .home__title--scaleconf{
   font-family: 'eausans_bold';
-  font-size: 5.625rem;
+  font-size: 2.625rem;
   margin-top: 6.5rem;
-  margin-bottom: -0.5rem;
+  margin-bottom: 0.5rem;
   letter-spacing: 0.1rem;
 }
 .home__title--colombia{
   font-family: 'Open Sans';
-  font-size: 4rem;
+  font-size: 2rem;
   letter-spacing: 0.55rem;
 }
 .home__date{
@@ -89,6 +90,7 @@ header{
   font-family: 'Open Sans';
   font-weight: 500;
   text-transform: uppercase;
+  margin: 10px 0;
 }
 
 /* SECTION STYLES */
@@ -384,10 +386,10 @@ header{
  */
 @media screen and (min-width: 60em) {
   .home__title--scaleconf{
-    font-size: 4.0rem;
+    font-size: 2.0rem;
   }
   .home__title--colombia{
-    font-size: 2.5rem;
+    font-size: 1.5rem;
     font-weight: 500;
   }
   .f-1-l {
@@ -406,21 +408,21 @@ header{
 
 @media(max-width:1130px){
   .home__title--scaleconf{
-    font-size: 4.0rem;
+    font-size: 2.0rem;
   }
   .home__title--colombia{
-    font-size: 2.5rem;
+    font-size: 1.5rem;
     font-weight: 500;
   }
 }
 
 @media (max-width:900px){
   .home__title--scaleconf{
-    font-size: 4.625rem;
+    font-size: 1.625rem;
   }
 
   .home__title--colombia{
-    font-size: 2.5rem;
+    font-size: 1.0rem;
     font-weight: 500;
   }
 
@@ -450,11 +452,11 @@ header{
     font-size: 1.3rem;
   }
   .home__title--colombia{
-    font-size: 2.5rem;
+    font-size: 1.0rem;
     font-weight: 500;
   }
   .home__title--scaleconf{
-    font-size: 3.625rem;
+    font-size: 1.625rem;
   }
   .btn{
     font-size: 1rem;
@@ -476,11 +478,11 @@ header{
   }
 }
 
-@media(max-width:400px){
+/*@media(max-width:400px){
   .home__title--scaleconf{
     font-size: 3rem;
   }
-}
+}*/
 
 /**
  * Misc

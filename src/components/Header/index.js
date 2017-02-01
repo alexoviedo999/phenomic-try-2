@@ -21,11 +21,11 @@ export default class Hero extends Component {
       <div id="particles-js" className="w-100 gradient h-650">
         <Nav />
         <div className="mw80 w-100 center relative eye-image">
-          <header className="w-100 tc tl-l w-auto-l">
-            <h1 className="home__title home__title--scaleconf">Advanced Eye Center</h1>
-            <h1 className="home__title home__title--colombia">Dr. Rodrigo Belalcazar </h1>
+          <header className="w-100 tr">
+            <h1 className="home__title home__title--scaleconf">Rodrigo Belalcazar, MD PLLC</h1>
+            <h1 className="home__title home__title--colombia">Advanced Eye Center </h1>
             <p className="home__date">
-              Hialeah, Fl
+              South Florida
             </p>
             <a className="btn btn--home" href="https://ti.to/colombia-dev/scaleconfco">
               Contact Us
