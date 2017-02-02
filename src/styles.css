@@ -46,7 +46,7 @@
       rgba(8, 145, 253, 1.7)
     ),*/
     /* bottom, image */
-    url('./assets/images/staff-1.jpg') center no-repeat;
+    url('./assets/images/staff.jpg') center no-repeat;
     background-size: cover;
 }
 
