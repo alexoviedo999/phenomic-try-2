@@ -41,12 +41,12 @@
 */
 .gradient {
   background:
-    radial-gradient(
+    /*radial-gradient(
       rgba(212, 115, 89, 0.60),
       rgba(8, 145, 253, 1.7)
-    ),
+    ),*/
     /* bottom, image */
-    url('./assets/images/eye.jpg') center no-repeat;
+    url('./assets/images/staff-1.jpg') center no-repeat;
     background-size: cover;
 }
 
@@ -62,9 +62,13 @@
 /*HOME */
 
 header{
-  padding: 4rem;
+  padding-right: 2rem;
   position: absolute;
-  bottom: -650px;
+  bottom: -635px;
+}
+
+.hero-wrap {
+  background-color: rgba(22,73,110, 0.4);
 }
 
 .home__title{
@@ -86,7 +90,7 @@ header{
 }
 .home__date{
   font-size: 1.875rem;
-  color: var(--dark-green);
+  color: var(--bright-green);
   font-family: 'Open Sans';
   font-weight: 500;
   text-transform: uppercase;
@@ -312,7 +316,7 @@ header{
 }
 
 .top-nav .db-l:not(.dn){
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: rgba(22,73,110, 0.4);
 }
 
 /**
@@ -402,7 +406,7 @@ header{
     margin: 0 -4rem -2rem 4rem;
   }
   .top-nav {
-    background-color: rgba(255, 255, 255, 0.3);
+    background-color: rgba(22,73,110, 0.4);
   }
 }
 
