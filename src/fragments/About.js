@@ -17,14 +17,15 @@ export default class About extends React.Component {
             <span className="eau-book">Advanced Eye Center</span>
             </h2>
             <p className="section__content">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+              Advanced Eye Center was opened in 2012 with the goal to offer the people of South Florida, the United States, and the world over, the most innovative treatments to improve your vison.
               <br/>
               <br/>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+              We are proud to say we have treated patients using a variety of treatments, including laser techniques, from numerous countries spanning the globe, such as: The United States, Canada, Mexico, Nicaragua, El Salvador, Honduras, Panama, Cuba, Jamaica, The Dominican Republic, Trinidad and Tobago, Aruba, Haiti, Colombia, Venezuela, Brazil, Ecuador, Peru, Bolivia, Chile, Argentina, Uruguay, Spain, France, the United Kingdom, Germany, Switzerland, Italy, Poland, The Ukraine, Japan, Australia, the United Arab Emirates, and South Africa. Our dream was to provide as much healthcare to as many people on Earth, and that dream is now a reality.
+              <br/>
             </p>
 
           </div>
-          <img src={require('../../src/assets/images/eye-clinic.jpg')} alt="Advanced Eye Center" className="pl4-l pl3-m pl3-ns w-40 dib-l"/>
+          <img src={require('../../src/assets/images/surgery.jpg')} alt="Advanced Eye Center" className="pl4-l pl3-m pl3-ns w-40 dib-l"/>
         </div>
 
 
