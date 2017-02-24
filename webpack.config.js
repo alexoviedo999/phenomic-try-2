@@ -64,8 +64,8 @@ export default (config = {}) => {
             path.resolve(__dirname, "src"),
           ],
           loaders: [
-            "babel-loader?cacheDirectory",
-            "eslint-loader" + (config.dev ? "?emitWarning" : ""),
+            "babel-loader?cacheDirectory"
+            // "eslint-loader" + (config.dev ? "?emitWarning" : ""),
           ],
         },
 

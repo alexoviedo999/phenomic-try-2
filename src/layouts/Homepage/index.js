@@ -14,7 +14,7 @@ const Homepage = (props) => {
   return (
     <Page { ...props }>
       <div className="section mw80 center" id="about">
-        <About />
+        <About/>
       </div>
       <div className="section bg-speakers" id="speakers">
         <Speakers />
@@ -28,11 +28,6 @@ const Homepage = (props) => {
       <div className="section mw80 center" id="scholarships">
         <Scholarships />
       </div>
-      {/*
-        <div className="section bg-coc" id="codeofconduct">
-          <CodeOfConduct />
-        </div>
-        */}
 
       <div className="section gradient">
         <Organizers />

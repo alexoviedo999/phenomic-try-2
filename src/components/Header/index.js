@@ -1,20 +1,14 @@
 import React, { Component } from 'react'
+import { connect } from 'react-redux';
 import Nav from "../Nav"
+import {strings} from '../../metadata'
+import {setLanguage} from '../../redux/language'
 
-// let particles
-// if (typeof window !== 'undefined') {
-//   particles = require('particles.js')
-// }
-
-export default class Hero extends Component {
-
-  // TODO:
-  // componentDidMount() {
-  //   particles && particles.particlesJS.load('particles-js', '/../../../content/assets/particles.json', function() {
-  //     // eslint-disable-next-line no-console
-  //     console.log('callback - particles.js config loaded');
-  //   })
-  // }
+class Hero extends Component {
+  toggleLan() {
+    let lan = this.props.lan === "english" ? "español" : "english";
+    this.props.setLanguage(lan);
+  }
 
   render() {
     return (
@@ -38,3 +32,15 @@ export default class Hero extends Component {
     )
   }
 }
+
+const mapStateToProps = (state) => ({
+  lan: state.language
+});
+
+const mapDispatchToProps = dispatch => {
+  return ({
+    setLanguage: lan => dispatch(setLanguage(lan))
+  });
+}
+
+export default connect( mapStateToProps, mapDispatchToProps )( Hero );

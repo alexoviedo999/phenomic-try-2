@@ -138,6 +138,8 @@
     "particles.js": "2.0.0",
     "react-google-analytics": "0.2.0",
     "react-leaflet": "^1.0.0-rc.3",
+    "react-localization": "0.0.12",
+    "redux-devtools-extension": "^2.13.0",
     "tachyons": "4.5.5"
   }
 }
